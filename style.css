@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 微軟正黑體;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #faf7f0;
+}
+
+#banner {
+    background-image: url(imgs/banner.jpg);
+    background-size: 100vw;
+    /* bgr 背景圖片重複 */
+    background-repeat: no-repeat;
+    width: 100vw;
+    /* calc 計算 - CSS 計算數字 + - * / */
+    height: calc(100vw / 2.2);
+
+    overflow: hidden;
+}
+
+#logo {
+    width: 300px;
+}
+
+#link {
+    float: right;
+    padding: 40px 0;
+}
+
+#link a {
+    color: #fff;
+    text-decoration: none;
+    /* 內距：上下 左右 */
+    padding: 5px 15px;
+    /* 字體粗細 0 - 900 */
+    font-weight: 800;
+}
+
+#link a:hover {
+    background-color: #ffe048;
+    color: black;
+    transition: 0.6s;
+}
+
+/* 導覽列區塊 */
+nav {
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+/* 品牌區塊 */
+#brands {
+    text-align: center;
+    color: #58451a;
+}
+
+#brands p {
+    width: 570px;
+    margin: 0 auto;
+    padding: 30px;
+    line-height: 2;
+    /* 透明度 0 - 1 */
+    opacity: 0.6;
+    /* 字距 */
+    letter-spacing: 6px;
+}
+
+
+/* 標題區塊 */
+.title-box {
+    text-align: center;
+    color: #58451a;
+}
+.title {
+    font-size: 1.5em;
+    padding: 10px 0;
+}
+
+.title::before {
+    content: "＼";
+    padding-right: 20px;
+}
+
+.title::after {
+    content: "／";
+    padding-left: 20px;
+}
+
+.title-box h1 {
+    font-size: 1.6em;
+}
+
+/* 產品區塊 */
+#product {
+    /* 顯示模式：格線 */
+    display: grid;
+    /* 格線-框架-欄位：欄位尺寸 欄位尺寸 欄位尺寸 */
+    grid-template-columns: auto auto auto;
+    /* 格線-間隙 */
+    grid-gap: 20px;
+}
+
+#product img {
+    width: 100%;
+}
